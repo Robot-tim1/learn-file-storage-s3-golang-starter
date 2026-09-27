@@ -15,6 +15,9 @@ body {
     background-color: var(--bg-color);
     color: var(--fg-color);
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-bar {
@@ -180,4 +183,19 @@ form {
 button[disabled] {
     background-color: var(--subtle-color);
     cursor: not-allowed;
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+    padding: 12px 24px;
+    color: var(--subtle-color);
+    text-align: center;
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+footer a {
+    color: inherit;
 }
